@@ -17,7 +17,7 @@
 		USERNAME2: <input type="text" name="username2" />
 		PASSWORD2: <input type="password" name="password2" />
 		<br/>
-		<button type="ubmit">Submit the data</button>
+		<button type="submit">Submit the data</button>
 	</form>
 </body>
 </html>
