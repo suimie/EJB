@@ -417,3 +417,54 @@ Caused by: java.net.BindException: Address already in use: bind
 28-Jun-2018 12:23:49.455 INFO [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
 28-Jun-2018 12:23:49.456 INFO [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
 28-Jun-2018 12:23:49.457 INFO [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+28-Jun-2018 21:35:22.499 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/9.0.10
+28-Jun-2018 21:35:22.501 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 20 2018 17:32:21 UTC
+28-Jun-2018 21:35:22.501 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         9.0.10.0
+28-Jun-2018 21:35:22.501 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+28-Jun-2018 21:35:22.502 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+28-Jun-2018 21:35:22.502 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+28-Jun-2018 21:35:22.502 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jre1.8.0_171
+28-Jun-2018 21:35:22.502 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_171-b11
+28-Jun-2018 21:35:22.502 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+28-Jun-2018 21:35:22.502 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\suimi\JAC\EJB\apache-tomcat-9.0.10
+28-Jun-2018 21:35:22.502 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\suimi\JAC\EJB\apache-tomcat-9.0.10
+28-Jun-2018 21:35:22.502 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\suimi\JAC\EJB\apache-tomcat-9.0.10\conf\logging.properties
+28-Jun-2018 21:35:22.504 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+28-Jun-2018 21:35:22.504 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+28-Jun-2018 21:35:22.504 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+28-Jun-2018 21:35:22.504 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+28-Jun-2018 21:35:22.504 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\suimi\JAC\EJB\apache-tomcat-9.0.10
+28-Jun-2018 21:35:22.504 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\suimi\JAC\EJB\apache-tomcat-9.0.10
+28-Jun-2018 21:35:22.505 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\suimi\JAC\EJB\apache-tomcat-9.0.10\temp
+28-Jun-2018 21:35:22.505 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_171\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin\;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Xoreax\IncrediBuild;C:\Program Files\Git\cmd;C:\xampp\php;C:\composer;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Brackets\command;C:\Program Files\nodejs\;C:\WINDOWS\System32\OpenSSH\;C:\Users\suimi\AppData\Local\Microsoft\WindowsApps;C:\Users\suimi\AppData\Roaming\Composer\vendor\bin;C:\Users\suimi\AppData\Local\GitHubDesktop\bin;C:\Program Files\Microsoft VS Code\bin;C:\Users\suimi\AppData\Roaming\npm;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;;.]
+28-Jun-2018 21:35:22.660 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+28-Jun-2018 21:35:23.123 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+28-Jun-2018 21:35:23.130 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+28-Jun-2018 21:35:23.132 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+28-Jun-2018 21:35:23.132 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 859 ms
+28-Jun-2018 21:35:23.177 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+28-Jun-2018 21:35:23.177 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/9.0.10
+28-Jun-2018 21:35:23.251 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\suimi\JAC\EJB\apache-tomcat-9.0.10\webapps\Export1.war]
+28-Jun-2018 21:35:23.336 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [C:\Users\suimi\JAC\EJB\apache-tomcat-9.0.10\webapps\Export1] was found with a last modified time that did not match the associated WAR. It will be deleted.
+28-Jun-2018 21:35:23.638 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-Jun-2018 21:35:23.689 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\suimi\JAC\EJB\apache-tomcat-9.0.10\webapps\Export1.war] has finished in [438] ms
+28-Jun-2018 21:35:23.690 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\suimi\JAC\EJB\apache-tomcat-9.0.10\webapps\docs]
+28-Jun-2018 21:35:23.731 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\suimi\JAC\EJB\apache-tomcat-9.0.10\webapps\docs] has finished in [41] ms
+28-Jun-2018 21:35:23.731 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\suimi\JAC\EJB\apache-tomcat-9.0.10\webapps\examples]
+28-Jun-2018 21:35:24.270 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\suimi\JAC\EJB\apache-tomcat-9.0.10\webapps\examples] has finished in [539] ms
+28-Jun-2018 21:35:24.271 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\suimi\JAC\EJB\apache-tomcat-9.0.10\webapps\host-manager]
+28-Jun-2018 21:35:24.336 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\suimi\JAC\EJB\apache-tomcat-9.0.10\webapps\host-manager] has finished in [64] ms
+28-Jun-2018 21:35:24.336 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\suimi\JAC\EJB\apache-tomcat-9.0.10\webapps\manager]
+28-Jun-2018 21:35:24.394 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\suimi\JAC\EJB\apache-tomcat-9.0.10\webapps\manager] has finished in [58] ms
+28-Jun-2018 21:35:24.395 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\suimi\JAC\EJB\apache-tomcat-9.0.10\webapps\ROOT]
+28-Jun-2018 21:35:24.456 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\suimi\JAC\EJB\apache-tomcat-9.0.10\webapps\ROOT] has finished in [61] ms
+28-Jun-2018 21:35:24.462 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+28-Jun-2018 21:35:24.474 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+28-Jun-2018 21:35:24.477 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1344 ms
+28-Jun-2018 21:36:09.245 INFO [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+28-Jun-2018 21:36:09.365 INFO [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+28-Jun-2018 21:36:09.478 INFO [Thread-5] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+28-Jun-2018 21:36:09.495 INFO [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+28-Jun-2018 21:36:09.496 INFO [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+28-Jun-2018 21:36:09.497 INFO [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+28-Jun-2018 21:36:09.498 INFO [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
