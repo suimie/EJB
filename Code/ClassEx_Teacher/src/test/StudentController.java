@@ -29,7 +29,7 @@ public class StudentController extends HttpServlet {
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
 			Connection con = DriverManager.getConnection(
-					"jdbc:mysql://localhost:3306/studentTest", "root", "root");
+					"jdbc:mysql://localhost:3306/ejbdb", "root", "root");
 			String query = "select * from student where name=?";
 			PreparedStatement st = con.prepareStatement(query);
 			st.setString(1, uname);
@@ -38,7 +38,7 @@ public class StudentController extends HttpServlet {
 			String result = "User not found";
 			if(rs.next()) {
 				String nameFromDB = rs.getString("name");
-				String IDFromDB = rs.getString("id");
+				String IDFromDB = rs.getString("studentId");
 				
 				result = "user found and details are "
 						+ "\n Name: "+nameFromDB+" "
