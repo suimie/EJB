@@ -30,7 +30,7 @@ public class StudentController extends HttpServlet {
 			Class.forName("com.mysql.jdbc.Driver");
 			Connection con = DriverManager.getConnection(
 					"jdbc:mysql://localhost:3306/ejbdb", "root", "root");
-			String query = "select * from student where name=?";
+			String query = "select * from classwork0629 where username=?";
 			PreparedStatement st = con.prepareStatement(query);
 			st.setString(1, uname);
 			
