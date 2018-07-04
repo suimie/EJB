@@ -8,6 +8,12 @@
 <title>Insert title here</title>
 </head>
 <body>
+<% if(session.getAttribute("user1") == null) {
+	response.sendRedirect("index.jsp");
+}else{
+	out.print("Else");
+}
+%>
 	<h1>Welcome.jsp page</h1>
 	
 	<% String error = (String)request.getAttribute("error");
@@ -17,5 +23,8 @@
 	<% } Student student = (Student)request.getAttribute("student"); %>
 	
 	Student details are <%=student %>
+	
+	<br/><br/>
+	<a href="LoginStudent">Logout</a>
 </body>
 </html>
