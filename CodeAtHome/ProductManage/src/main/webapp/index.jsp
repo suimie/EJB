@@ -2,8 +2,7 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Insert title here</title>
-<link href="resources/css/bootstrap.css" rel="stylesheet">
+<title>Welcome to Product Management System</title>
 
 <jsp:include page="header.jsp"></jsp:include>
 

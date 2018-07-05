@@ -3,17 +3,18 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Insert title here</title>
+<title>Add Product</title>
 <link href="resources/css/bootstrap.css" rel="stylesheet">
+
 <jsp:include page="header.jsp"></jsp:include>
+
 	<div class="container">
-<% String username = (String)session.getAttribute("username");
+	<% String username = (String)session.getAttribute("username");
 	if(username == null || !username.equals("admin")){%>
 		<h1>You don't have the authority to add products.  Sorry</h1>
 		<br/><br/>
-		<a href="/ProductManage/getProductsList" class="btn btn-primary">Go back to list</a>
-	<% 
-	}else{ %>
+		<a href="/ProductManage/getProductsList" class="btn btn-primary">Go back to list</a>	 
+	<%}else{ %>
 		<form action="addProduct" method="post">
 		  <fieldset>
 		    <legend>Enter information of new product </legend>

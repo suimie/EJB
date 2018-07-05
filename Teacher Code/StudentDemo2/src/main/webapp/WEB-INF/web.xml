@@ -1,0 +1,40 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<display-name>Archetype Created Web Application</display-name>
+	<servlet>
+		<servlet-name>StudentController</servlet-name>
+		<display-name>StudentController</display-name>
+		<description></description>
+		<servlet-class>com.jac.web.controller.StudentController</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>LoginController</servlet-name>
+		<display-name>LoginController</display-name>
+		<description></description>
+		<servlet-class>com.jac.web.controller.LoginController</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>LogoutUser</servlet-name>
+		<display-name>LogoutUser</display-name>
+		<description></description>
+		<servlet-class>com.jac.web.controller.LogoutUser</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>StudentController</servlet-name>
+		<url-pattern>/getStudent</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LoginController</servlet-name>
+		<url-pattern>/loginStudent</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LogoutUser</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

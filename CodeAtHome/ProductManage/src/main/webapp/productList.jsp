@@ -5,8 +5,7 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Insert title here</title>
-<link href="resources/css/bootstrap.css" rel="stylesheet">
+<title>Products List</title>
 <jsp:include page="header.jsp"></jsp:include>
 
 	<div class="container">
@@ -32,7 +31,7 @@
 			<% for(int i=0; i < productList.size(); i++){ 
 				Product p = productList.get(i);
 			%>
-				<tr">
+				<tr>
 					<td><%= p.getId() %> </td>
 					<td><%= p.getName() %> </td>
 					<td style="text-align:right"><%= p.getPrice().toString() %> </td>
