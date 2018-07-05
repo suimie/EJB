@@ -1,6 +1,7 @@
 package com.jac.web.controller;
 
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 
 import javax.servlet.ServletException;
@@ -15,15 +16,15 @@ import com.jac.web.model.Product;
 import com.jac.web.model.User;
 
 /**
- * Servlet implementation class LoginController
+ * Servlet implementation class addProductController
  */
-public class LoginController extends HttpServlet {
+public class addProductController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public LoginController() {
+    public addProductController() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -32,11 +33,8 @@ public class LoginController extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.setContentType("text/html");
-		HttpSession session = request.getSession();
-		session.setAttribute("username", null);
-		
-		response.sendRedirect("index.jsp");
+		// TODO Auto-generated method stub
+		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
 	/**
@@ -45,22 +43,13 @@ public class LoginController extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html");
 		
-		String username = request.getParameter("username");
-		String password = request.getParameter("password");
+		String pname = request.getParameter("pname");
+		BigDecimal pprice = new BigDecimal((request.getParameter("pprice")));
 				
-		User user = (new UserDAO()).getUser(username);
+		(new ProductDAO()).addProduct(pname, pprice);
+		
 
-		if (user != null && password.equals(user.getPassword())) {
-			HttpSession session = request.getSession();
-			session.setAttribute("username", username);
-			response.sendRedirect("/ProductManage/getProductsList");
-		}else {
-			HttpSession session = request.getSession();
-			session.setAttribute("username", null);
-			session.setAttribute("error",  "Wrong username or password.");
-			
-			response.sendRedirect("index.jsp");
-		}
+		response.sendRedirect("/ProductManage/getProductsList");
 	}
 
 }

@@ -92,9 +92,9 @@ public class ProductDAO {
 		ArrayList<Product> productList = new ArrayList<Product>();
 		
 		try{
-			Class.forName("com.mysql.jdbc.Driver");
-			Connection con = (Connection)DriverManager.getConnection(
-					"jdbc:mysql://localhost:3306/ejbdb", "root", "root");
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection con = DriverManager.getConnection(
+					"jdbc:mysql://localhost:3306/ejbdb?autoReconnect=true&useLegacyDatetimeCode=false&serverTimezone=MST", "root", "root");
 			String query = "select * from product";
 			Statement st = con.createStatement();
 			
@@ -122,4 +122,37 @@ public class ProductDAO {
 		
 		return productList;
 	}
+	
+	public void addProduct(String name, BigDecimal price) {
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection con = DriverManager.getConnection(
+					"jdbc:mysql://localhost:3306/ejbdb?autoReconnect=true&useLegacyDatetimeCode=false&serverTimezone=MST", "root", "root");
+	
+			String sql = "INSERT INTO product (name, price) VALUES (?, ?)";
+
+        	PreparedStatement stmt = con.prepareStatement(sql);
+            stmt.setString(1, name);
+            stmt.setBigDecimal(2, price);
+
+            stmt.executeUpdate();
+        }catch(Exception e) {
+			e.printStackTrace();
+		}
+    }
+	
+	public void deleteProduct(int id)  {
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection con = DriverManager.getConnection(
+					"jdbc:mysql://localhost:3306/ejbdb?autoReconnect=true&useLegacyDatetimeCode=false&serverTimezone=MST", "root", "root");
+	
+	        String sql = "DELETE FROM product WHERE id=?";
+	        PreparedStatement stmt = con.prepareStatement(sql);
+	            stmt.setInt(1, id);            
+	            stmt.executeUpdate();
+        }catch(Exception e) {
+			e.printStackTrace();
+		}
+    }
 }

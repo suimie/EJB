@@ -10,9 +10,30 @@
   	<description></description>
   	<servlet-class>com.jac.web.controller.LoginController</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>addProductController</servlet-name>
+  	<display-name>addProductController</display-name>
+  	<description></description>
+  	<servlet-class>com.jac.web.controller.addProductController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>getProductsListController</servlet-name>
+  	<display-name>getProductsListController</display-name>
+  	<description></description>
+  	<servlet-class>com.jac.web.controller.getProductsListController</servlet-class>
+  </servlet>
+
   <servlet-mapping>
   	<servlet-name>LoginController</servlet-name>
   	<url-pattern>/LoginSystem</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>addProductController</servlet-name>
+  	<url-pattern>/addProduct</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>getProductsListController</servlet-name>
+  	<url-pattern>/getProductsList</url-pattern>
   </servlet-mapping>
   
   <welcome-file-list>

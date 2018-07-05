@@ -3,6 +3,7 @@ package com.jac.web.controller;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -10,20 +11,18 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import com.jac.web.dao.ProductDAO;
-import com.jac.web.dao.UserDAO;
 import com.jac.web.model.Product;
-import com.jac.web.model.User;
 
 /**
- * Servlet implementation class LoginController
+ * Servlet implementation class getProductsListController
  */
-public class LoginController extends HttpServlet {
+public class getProductsListController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public LoginController() {
+    public getProductsListController() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -33,34 +32,32 @@ public class LoginController extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html");
-		HttpSession session = request.getSession();
-		session.setAttribute("username", null);
 		
-		response.sendRedirect("index.jsp");
+		HttpSession session = request.getSession();
+		if(session.getAttribute("username") == null) {
+			
+			response.sendRedirect("index.jsp");
+		}else {
+		
+			ArrayList<Product> productList = (new ProductDAO()).getAllProducts();
+			
+			request.setAttribute("products", productList);
+	
+		
+			RequestDispatcher rd = request.getRequestDispatcher("productList.jsp");
+			rd.forward(request, response);
+		}
 	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.setContentType("text/html");
+		int id = Integer.parseInt(request.getParameter("pId"));
 		
-		String username = request.getParameter("username");
-		String password = request.getParameter("password");
-				
-		User user = (new UserDAO()).getUser(username);
-
-		if (user != null && password.equals(user.getPassword())) {
-			HttpSession session = request.getSession();
-			session.setAttribute("username", username);
-			response.sendRedirect("/ProductManage/getProductsList");
-		}else {
-			HttpSession session = request.getSession();
-			session.setAttribute("username", null);
-			session.setAttribute("error",  "Wrong username or password.");
-			
-			response.sendRedirect("index.jsp");
-		}
+		ProductDAO pdao = new ProductDAO();
+		pdao.deleteProduct(id);
+		
+		doGet(request, response);
 	}
-
 }

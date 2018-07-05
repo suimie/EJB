@@ -1,10 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<link href="resources/css/bootstrap.css" rel="stylesheet">
+
 <jsp:include page="header.jsp"></jsp:include>
-<body>
 
 <div class="container" >
 	<form action="LoginSystem" method="post">
 	  <fieldset>
 	    <legend>Welcome! Login please!</legend>
+	    <% String errorStr = (String)session.getAttribute("error"); %>
+		<% if(session.getAttribute("username") == null && errorStr != null){%>
+			<p><%= errorStr %></p>
+		<% session.removeAttribute("error");}%>
+
 	    <div class="form-group">
 	      <label for="username">Username</label>
 	      <input type="text" class="form-control" id="username" name="username" placeholder="Username">
@@ -17,5 +28,5 @@
 	  </fieldset>
 	</form>
 </div>
-</body>
-</html>
+
+<jsp:include page="footer.jsp"></jsp:include>

@@ -12,9 +12,9 @@ public class UserDAO {
 		User user = null;
 		
 		try{
-			Class.forName("com.mysql.jdbc.Driver");
-			Connection con = (Connection)DriverManager.getConnection(
-					"jdbc:mysql://localhost:3306/ejbdb", "root", "root");
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection con = DriverManager.getConnection(
+					"jdbc:mysql://localhost:3306/ejbdb?autoReconnect=true&useLegacyDatetimeCode=false&serverTimezone=MST", "root", "root");
 			String query = "select * from user where username=?";
 			PreparedStatement st = con.prepareStatement(query);
 			st.setString(1, username);
