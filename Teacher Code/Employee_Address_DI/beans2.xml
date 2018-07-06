@@ -1,0 +1,22 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+           http://www.springframework.org/schema/aop
+           http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+
+	<bean id="emp" class="test.Employee">
+		<property name="name" value="Employee 1" />
+		 <property name="address"><ref bean="address" /></property>
+		<!--<constructor-arg><ref bean="circle" /></constructor-arg> -->
+	</bean>
+
+	<bean id="address" class="test.Address">
+		<property name="city" value="Montreal" />
+		<property name="zipCode" value="ABC 123" />
+	</bean>
+
+</beans>
