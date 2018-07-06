@@ -3,6 +3,7 @@ package com.ipd12.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -31,15 +32,13 @@ public class StudentController {
 	@Autowired
 	StudentManager sm;
 	
-	@RequestMapping("/getStudent")
+	@RequestMapping(value="/getStudent", method={RequestMethod.POST})
 	public ModelAndView getStudent() {
 		
-		
 		String res = sm.callStudentManager();
+		System.out.println("Testing AutoWiring for Student "+res);
 		
 		ModelAndView mv = new ModelAndView("result2");
-		mv.addObject("message", res);
-		mv.addObject("message", res);
 		return mv;
 	}
 }

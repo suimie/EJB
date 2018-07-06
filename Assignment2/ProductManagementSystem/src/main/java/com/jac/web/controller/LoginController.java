@@ -51,7 +51,9 @@ public class LoginController extends HttpServlet {
 		if (user != null && password.equals(user.getPassword())) {
 			HttpSession session = request.getSession();
 			session.setAttribute("username", username);
-			response.sendRedirect("/ProductManagementSystem/Products");
+			//response.sendRedirect("/ProductManagementSystem/Products");
+			
+			response.sendRedirect(request.getContextPath() + "/Products");
 		}else {
 			HttpSession session = request.getSession();
 			session.setAttribute("username", null);

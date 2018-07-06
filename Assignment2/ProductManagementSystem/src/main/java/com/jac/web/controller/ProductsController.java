@@ -68,9 +68,16 @@ public class ProductsController extends HttpServlet {
 			response.setContentType("text/html");
 			
 			String pname = request.getParameter("pname");
-			BigDecimal pprice = new BigDecimal((request.getParameter("pprice")));
+			try {
+				BigDecimal pprice = new BigDecimal((request.getParameter("pprice")));
+			
 					
-			(new ProductDAO()).addProduct(pname, pprice);
+				(new ProductDAO()).addProduct(pname, pprice);
+			}catch(NumberFormatException e) {
+				RequestDispatcher rd = request.getRequestDispatcher("addProduct.jsp");
+				rd.forward(request, response);
+				return;
+			}
 		}
 		
 		doGet(request, response);

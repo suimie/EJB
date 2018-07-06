@@ -25,11 +25,11 @@
   <div class="collapse navbar-collapse" id="navbarColor01">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="/ProductManage/index.jsp">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="<%=request.getContextPath() %>/index.jsp">Home <span class="sr-only">(current)</span></a>
       </li>
 	<% if(session.getAttribute("username") != null){%>
       <li class="nav-item">
-        <a class="nav-link" href="/ProductManagementSystem/Products">Product List</a>
+        <a class="nav-link" href="<%=request.getContextPath() %>/Products">Product List</a>
       </li>
 	<% }%>
       
@@ -39,7 +39,7 @@
       </li>
 	<% }%>
       <li class="nav-item">
-        <a class="nav-link" href="/ProductManagementSystem/LoginSystem">Logout</a>
+        <a class="nav-link" href="<%=request.getContextPath() %>/LoginSystem">Logout</a>
       </li>
     </ul>
   </div>

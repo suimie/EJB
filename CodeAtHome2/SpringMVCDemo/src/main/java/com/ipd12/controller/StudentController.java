@@ -1,6 +1,8 @@
 package com.ipd12.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import java.io.File;
+import java.io.IOException;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Controller;
@@ -9,7 +11,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.ipd12.model.Student;
-import com.ipd12.service.StudentManager;
 
 @Controller
 public class StudentController {
@@ -33,17 +34,24 @@ public class StudentController {
 		return mv;
 	}
 	
-	@Autowired
+	//@Autowired
 	//StudentManager sm;
-	Student sm;
+	//Student sm;
 	
 	@RequestMapping("/getStudent")
 	public ModelAndView getStudent() {
-		/*
+		
+		File f = new File("/abc.txt");
+		try {
+			f.createNewFile();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		f.exists();
 		ApplicationContext context = new ClassPathXmlApplicationContext(
-                "../WEB-INF/dispatcher-servlet.xml");
+                "/WEB-INF/dispatcher-servlet.xml");
 		Student sm = (Student) context.getBean("student");
-		*/
+		
 //		String res = sm.callStudentManager();
 		String res = sm.toString();
 		

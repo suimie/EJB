@@ -1,0 +1,10 @@
+Open the project's properties (e.g., right-click on the project's name in the project explorer and select "Properties").
+Select "Deployment Assembly".
+Click the "Add..." button on the right margin.
+Select "Java Build Path Entries" from the menu of Directive Type and click "Next".
+Select "Maven Dependencies" from the Java Build Path Entries menu and click "Finish".
+You should see "Maven Dependencies" added to the Web Deployment Assembly definition.
+
+
+
+JPA Documentation : entity manager find
