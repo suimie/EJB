@@ -12,7 +12,7 @@
 	    <legend>Welcome! Login please!</legend>
 	    <% String errorStr = (String)session.getAttribute("error"); %>
 		<% if(session.getAttribute("username") == null && errorStr != null){%>
-			<p><%= errorStr %></p>
+			<p class="text-danger"><%= errorStr %></p>
 		<% session.removeAttribute("error");}%>
 
 	    <div class="form-group">

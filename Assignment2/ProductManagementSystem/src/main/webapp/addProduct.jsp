@@ -10,15 +10,20 @@
 
 	<div class="container">
 	<% String username = (String)session.getAttribute("username");
-	if(username == null || !username.equals("admin")){%>
+	if(username == null || !username.equals("admin")){ %>
 		<h1>You don't have the authority to add products.  Sorry</h1>
 		<br/><br/>
 		<a href="<%=request.getContextPath() %>/Products" class="btn btn-primary">Go back to list</a>	 
-	<%}else{ 
-		%>
+	<%}else{ %>
 		<form action="Products" method="post">
 		  <fieldset>
 		    <legend>Enter information of new product </legend>
+		    
+    		<% String error = (String)request.getAttribute("error");
+			if(error != null && error != ""){%>
+				<p class="text-danger"><%= error %></p>
+			<% }%>
+			
 		    <input type="hidden" id="command" name="command" value="add" />
 		    <div class="form-group">
 		      <label for="pname">Product Name</label>

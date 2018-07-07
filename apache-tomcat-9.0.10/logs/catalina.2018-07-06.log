@@ -57,3 +57,47 @@
 06-Jul-2018 09:31:40.197 INFO [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
 06-Jul-2018 09:31:40.200 INFO [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
 06-Jul-2018 09:31:40.201 INFO [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+06-Jul-2018 17:21:16.358 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/9.0.10
+06-Jul-2018 17:21:16.364 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 20 2018 17:32:21 UTC
+06-Jul-2018 17:21:16.364 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         9.0.10.0
+06-Jul-2018 17:21:16.364 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+06-Jul-2018 17:21:16.364 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+06-Jul-2018 17:21:16.364 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86
+06-Jul-2018 17:21:16.364 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files (x86)\Java\jdk1.8.0_172\jre
+06-Jul-2018 17:21:16.365 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_172-b11
+06-Jul-2018 17:21:16.365 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+06-Jul-2018 17:21:16.365 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\suimi\JAC\EJB\apache-tomcat-9.0.10
+06-Jul-2018 17:21:16.365 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\suimi\JAC\EJB\apache-tomcat-9.0.10
+06-Jul-2018 17:21:16.365 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\suimi\JAC\EJB\apache-tomcat-9.0.10\conf\logging.properties
+06-Jul-2018 17:21:16.365 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Jul-2018 17:21:16.365 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+06-Jul-2018 17:21:16.366 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-Jul-2018 17:21:16.366 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+06-Jul-2018 17:21:16.366 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\suimi\JAC\EJB\apache-tomcat-9.0.10
+06-Jul-2018 17:21:16.367 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\suimi\JAC\EJB\apache-tomcat-9.0.10
+06-Jul-2018 17:21:16.367 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\suimi\JAC\EJB\apache-tomcat-9.0.10\temp
+06-Jul-2018 17:21:16.368 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\Java\jdk1.8.0_172\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Users\suimi\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\Microsoft VS Code\bin;.]
+06-Jul-2018 17:21:16.625 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+06-Jul-2018 17:21:16.709 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+06-Jul-2018 17:21:16.718 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+06-Jul-2018 17:21:16.721 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+06-Jul-2018 17:21:16.721 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 870 ms
+06-Jul-2018 17:21:16.748 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-Jul-2018 17:21:16.749 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/9.0.10
+06-Jul-2018 17:21:16.778 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\suimi\JAC\EJB\apache-tomcat-9.0.10\webapps\1796138.war]
+06-Jul-2018 17:21:16.809 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [C:\Users\suimi\JAC\EJB\apache-tomcat-9.0.10\webapps\1796138] was found with a last modified time that did not match the associated WAR. It will be deleted.
+06-Jul-2018 17:21:17.968 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Jul-2018 17:21:18.125 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\suimi\JAC\EJB\apache-tomcat-9.0.10\webapps\1796138.war] has finished in [1,344] ms
+06-Jul-2018 17:21:18.127 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\suimi\JAC\EJB\apache-tomcat-9.0.10\webapps\docs]
+06-Jul-2018 17:21:18.171 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\suimi\JAC\EJB\apache-tomcat-9.0.10\webapps\docs] has finished in [43] ms
+06-Jul-2018 17:21:18.171 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\suimi\JAC\EJB\apache-tomcat-9.0.10\webapps\examples]
+06-Jul-2018 17:21:18.641 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\suimi\JAC\EJB\apache-tomcat-9.0.10\webapps\examples] has finished in [469] ms
+06-Jul-2018 17:21:18.641 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\suimi\JAC\EJB\apache-tomcat-9.0.10\webapps\host-manager]
+06-Jul-2018 17:21:18.708 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\suimi\JAC\EJB\apache-tomcat-9.0.10\webapps\host-manager] has finished in [66] ms
+06-Jul-2018 17:21:18.708 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\suimi\JAC\EJB\apache-tomcat-9.0.10\webapps\manager]
+06-Jul-2018 17:21:18.740 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\suimi\JAC\EJB\apache-tomcat-9.0.10\webapps\manager] has finished in [31] ms
+06-Jul-2018 17:21:18.741 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\suimi\JAC\EJB\apache-tomcat-9.0.10\webapps\ROOT]
+06-Jul-2018 17:21:18.769 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\suimi\JAC\EJB\apache-tomcat-9.0.10\webapps\ROOT] has finished in [29] ms
+06-Jul-2018 17:21:18.773 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+06-Jul-2018 17:21:18.786 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+06-Jul-2018 17:21:18.792 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 2070 ms
