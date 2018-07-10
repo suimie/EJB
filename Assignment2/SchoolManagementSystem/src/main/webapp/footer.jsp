@@ -7,4 +7,7 @@
 	<hr>
     <p style="text-align: center;">&copy; <%= df.format(new Date()) %> - Product Management System | <span style="color:darkblue;">Programmed by Suim Park</span></p>
 </footer>
+<script src="webjars/jquery/3.1.1/jquery.min.js"></script>
+<script src="webjars/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
 </body>

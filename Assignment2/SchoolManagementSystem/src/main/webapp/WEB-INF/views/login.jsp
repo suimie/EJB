@@ -6,10 +6,10 @@
 
 <jsp:include page="../../header.jsp"></jsp:include>
 
-<div class="container" >
+<div class="container" style="width:500px;">
 	<form action="login" method="post">
 	  <fieldset>
-	    <legend>Welcome! Login please!</legend>
+	    <legend class="text-center text-secondary">Welcome to School Management System!<br/> Login please!</legend><br><br>
 	    <%
 	    	String error = (String)request.getAttribute("error");
 	    	if (error != null && error != ""){%>
