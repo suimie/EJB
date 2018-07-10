@@ -1,11 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.jac12</groupId>
-  <artifactId>ProductManagementSystem</artifactId>
+  <groupId>com.ipd12</groupId>
+  <artifactId>Test</artifactId>
   <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
-  <name>ProductManagementSystem Maven Webapp</name>
+  <name>Test Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>
@@ -15,7 +15,7 @@
       <scope>test</scope>
     </dependency>
     
-   	<dependency>
+    	<dependency>
 	    <groupId>javax.servlet</groupId>
 	    <artifactId>javax.servlet-api</artifactId>
 	    <version>4.0.1</version>
@@ -40,7 +40,6 @@
 	</dependency>
   </dependencies>
   <build>
-    <finalName>ProductManagementSystem</finalName>
+    <finalName>Test</finalName>
   </build>
 </project>
-
